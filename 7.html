@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập a")
+    let b = +prompt("Nhập b")
+    let c = +prompt("Nhập c")
+    d = (b**2)-(4*a*c)
+    if (a != 0) {
+        if (d < 0) {
+            alert("Phương trình vô nghiệm")
+        } else if (d == 0) {
+            alert("Phương trình có nghiệm kép: "+((-b)/(2*a)))
+        } else {
+            alert("Phương trình có 2 nghiệm phân biệt: "+(((-b) + Math.sqrt(d))/(2*a)) + " và "+ (((-b) - Math.sqrt(d))/(2*a)))
+        }
+    } else {
+        alert("Đây không phải là phương trình bậc 2")
+    }
+</script>
+</body>
+</html>
